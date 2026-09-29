@@ -17,15 +17,20 @@ body {
 
 
 h2 {
+    font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin-top: 30px;
+    text-shadow: 2px 2px 4px black;
 }
 
 table {
+    color: rgb(186, 176, 176);
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: rgba(52, 138, 78, 0.75);
+    background-color: rgba(20, 80, 35, 0.75);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 table, th, td {
@@ -33,12 +38,18 @@ table, th, td {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
 }
 
 a {
     text-decoration: none;
+}
+
+tr{
+    transition: 0.2s;
 }
 
 tr:hover {
