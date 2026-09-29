@@ -25,12 +25,10 @@ h2 {
 }
 
 table {
-    color: rgb(186, 176, 176);
+    color: rgba(250, 250, 250, 0.781);
     margin: 20px auto;
     border-collapse: collapse;
     background-color: rgba(20, 80, 35, 0.75);
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 table, th, td {
