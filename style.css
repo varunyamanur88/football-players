@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 30px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(52, 138, 78, 0.75);
+}
+
+table, th, td {
+    border: 3px solid white;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+tr:hover {
+    background-color: #45a85f;
+}
+
+a img:hover {
+    transform: scale(1.2);
+}
