@@ -9,6 +9,21 @@
 <!-- MAIN TITLE-->
 <body>
     <h2>⚽<u>Football</u>⚽</h2>
+
+    <!-- DROPDOWN -->
+     <div class="filter-container">
+    <label for="positionFilter">Choice:</label>
+
+    <select id="positionFilter">
+        <option value="all">All Positions</option>
+        <option value="RW">Right Winger (RW)</option>
+        <option value="LW">Left Winger (LW)</option>
+        <option value="ST">Striker (ST)</option>
+        <option value="CM">Central Midfielder (CM)</option>
+    </select>
+</div>
+
+
     <p>Welcome to my football players page!</p>
     <table>
         <tr>
@@ -19,7 +34,7 @@
             <th> Club </th>
         </tr>
         <!-- PLAYERS-->
-        <tr>
+        <tr class="player-row">
             <td> Lionel Messi </td>
             <td> RW </td>
             <td> Argentina </td>
@@ -30,7 +45,7 @@
                 Inter Miami
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Cristiano Ronaldo </td>
             <td> ST </td>
             <td> Portugal </td>
@@ -41,7 +56,7 @@
                 Al-Nassr FC 
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Neymar Jr </td>
             <td> LW </td>
             <td> Brazil </td>
@@ -52,7 +67,7 @@
                 Santos FC 
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Robert Lewandoski </td>
             <td> ST </td>
             <td> Poland </td>
@@ -63,7 +78,7 @@
                 Chicago Fire 
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Pedri </td>
             <td> CM </td>
             <td> Spain </td>
@@ -74,7 +89,7 @@
                 FC Barcelona 
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Virgil van Dijk </td>
             <td> CB </td>
             <td> Netherlands </td>
@@ -85,7 +100,7 @@
                 Liverpool FC 
             </td>
         </tr>
-        <tr>
+        <tr class="player-row">
             <td> Jamal Musiala </td>
             <td> AMF </td>
             <td> Germany </td>
@@ -97,5 +112,6 @@
             </td>
         </tr>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>

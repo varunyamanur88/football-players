@@ -57,3 +57,46 @@ tr:hover {
 a img:hover {
     transform: scale(1.2);
 }
+
+/* Dropdown */
+.filter-container {
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    left: -10%;
+}
+
+.filter-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+#positionFilter {
+    background-color: #14532d;
+    color: white;
+    border: 2px solid #facc15;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#positionFilter:hover {
+    background-color: #166534;
+}
+
+#positionFilter:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+#positionFilter option {
+    background-color: #14532d;
+    color: white;
+    padding: 8px;
+    border-bottom: 1px solid white;
+}
