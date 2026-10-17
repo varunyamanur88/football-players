@@ -200,3 +200,50 @@ a img:hover {
 .position-option:hover {
     background-color: #45a85f;
 }
+
+/* SEARCH BAR */
+.search-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#playerSearch {
+    width: 320px;
+    padding: 12px 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(20, 83, 45, 0.9);
+    border: 2px solid #facc15;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#playerSearch::placeholder {
+    color: #d1d5db;
+}
+
+#playerSearch:focus {
+    border-color: white;
+    box-shadow: 0 0 8px #facc15;
+}
+
+#playerSearch:hover {
+    background-color: #166534;
+}
+
+/* Move search bar to the right of the dropdown */
+.search-container {
+    position: absolute;
+    top: 95px;
+    right: 10%;
+    width: 350px;
+    margin: 0;
+}
+
+#playerSearch {
+    width: 100%;
+    box-sizing: border-box;
+}
