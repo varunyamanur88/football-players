@@ -113,3 +113,90 @@ a img:hover {
     padding: 8px;
     border-bottom: 1px solid white;
 }
+
+
+/* Main dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownButton {
+    font-family: "Rajdhani", sans-serif;
+    background-color: #14532d;
+    color: white;
+    border: 2px solid #facc15;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Main dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 190px;
+    background-color: #14532d;
+    border: 1px solid #facc15;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+/* Show menu when button is hovered or clicked */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main menu items */
+.dropdown-item {
+    position: relative;
+    padding: 10px 12px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: #166534;
+}
+
+.dropdown-item span {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 220px;
+    background-color: #14532d;
+    border: 1px solid #facc15;
+    border-radius: 6px;
+    z-index: 1001;
+}
+
+/* Show submenu when hovering over its category */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* Individual positions */
+.position-option {
+    padding: 10px 12px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.position-option:hover {
+    background-color: #45a85f;
+}

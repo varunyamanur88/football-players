@@ -1,22 +1,30 @@
-let positionFilter = document.getElementById("positionFilter");
+const dropdownButton = document.getElementById("dropdownButton");
+const positionOptions = document.querySelectorAll(".position-option");
+const players = document.querySelectorAll(".player-row");
 
-positionFilter.addEventListener("change", function () {
-    let selectedPosition = positionFilter.value;
+positionOptions.forEach(function (option) {
 
-    let players = document.querySelectorAll(".player-row");
+    option.addEventListener("click", function () {
 
-    console.log("Selected position:", selectedPosition);
-    console.log("Players found:", players.length);
+        const selectedPosition = option.dataset.position;
 
-    players.forEach(function (player) {
-        let position = player.cells[1].textContent.trim();
+        dropdownButton.textContent = option.textContent.trim() + " ▼";
 
-        console.log("Player position:", position);
+        players.forEach(function (player) {
 
-        if (selectedPosition === "all" || position === selectedPosition) {
-            player.style.display = "";
-        } else {
-            player.style.display = "none";
-        }
+            const position = player.cells[1].textContent.trim();
+
+            if (
+                selectedPosition === "all" ||
+                position.split("/").includes(selectedPosition)
+            ) {
+                player.style.display = "";
+            } else {
+                player.style.display = "none";
+            }
+
+        });
+
     });
+
 });

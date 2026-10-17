@@ -20,17 +20,69 @@
     <h2><u>Football</u></h2>
 
     <!-- DROPDOWN -->
-     <div class="filter-container">
-    <label for="positionFilter">Choice:</label>
+    <!-- POSITION DROPDOWN -->
+      <div class="filter-container">
 
-    <select id="positionFilter">
-        <option value="all">All Positions</option>
-        <option value="RW">Right Winger (RW)</option>
-        <option value="LW">Left Winger (LW)</option>
-        <option value="ST">Striker (ST)</option>
-        <option value="CM">Central Midfielder (CM)</option>
-        <option value="GK">Goalkeeper (GK)</option>
-    </select>
+      <label>Position:</label>
+
+      <div class="dropdown">
+
+        <button id="dropdownButton">All Positions ▼</button>
+
+        <div class="dropdown-menu">
+
+            <!-- FORWARDS -->
+            <div class="dropdown-item has-submenu">
+                Forward <span>▶</span>
+
+                <div class="submenu">
+                    <div class="position-option" data-position="ST">Striker (ST)</div>
+                    <div class="position-option" data-position="LW">Left Winger (LW)</div>
+                    <div class="position-option" data-position="RW">Right Winger (RW)</div>
+                    <div class="position-option" data-position="CF">Centre Forward (CF)</div>
+                </div>
+            </div>
+
+            <!-- MIDFIELDERS -->
+            <div class="dropdown-item has-submenu">
+                Midfielder <span>▶</span>
+
+                <div class="submenu">
+                    <div class="position-option" data-position="CM">Central Midfielder (CM)</div>
+                    <div class="position-option" data-position="AM">Attacking Midfielder (AM)</div>
+                    <div class="position-option" data-position="AMF">Attacking Midfielder Forward (AMF)</div>
+                    <div class="position-option" data-position="DM">Defensive Midfielder (DM)</div>
+                    <div class="position-option" data-position="CAM">Central Attacking Midfielder (CAM)</div>
+                    <div class="position-option" data-position="CDM">Central Defensive Midfielder (CDM)</div>
+                </div>
+            </div>
+
+            <!-- DEFENDERS -->
+            <div class="dropdown-item has-submenu">
+                Defender <span>▶</span>
+
+                <div class="submenu">
+                    <div class="position-option" data-position="CB">Centre Back (CB)</div>
+                    <div class="position-option" data-position="LB">Left Back (LB)</div>
+                    <div class="position-option" data-position="RB">Right Back (RB)</div>
+                    <div class="position-option" data-position="LWB">Left Wing Back (LWB)</div>
+                    <div class="position-option" data-position="RWB">Right Wing Back (RWB)</div>
+                </div>
+            </div>
+
+            <!-- GOALKEEPER -->
+            <div class="dropdown-item position-option" data-position="GK">
+                Goalkeeper (GK)
+            </div>
+
+            <!-- SHOW ALL -->
+            <div class="dropdown-item position-option" data-position="all">
+                All Positions
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 
