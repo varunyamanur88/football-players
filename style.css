@@ -247,3 +247,108 @@ a img:hover {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets and smaller screens */
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 28px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    table, th, td {
+        padding: 8px 6px;
+    }
+
+    a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .filter-container {
+        width: auto;
+        left: 0;
+    }
+
+    .search-container {
+        width: 300px;
+        right: 5%;
+    }
+
+    #playerSearch {
+        font-size: 15px;
+    }
+
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+
+    h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Make the table fit the screen */
+    table {
+        width: 100%;
+        font-size: 12px;
+        margin: 15px auto;
+    }
+
+    table, th, td {
+        padding: 6px 3px;
+        border-width: 1px;
+    }
+
+    /* Reduce club logo sizes */
+    a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Keep the dropdown usable */
+    #dropdownButton {
+        font-size: 14px;
+        padding: 9px 10px;
+    }
+
+    .dropdown-menu {
+        min-width: 170px;
+    }
+
+    .submenu {
+        min-width: 180px;
+    }
+
+    .dropdown-item,
+    .position-option {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    /* Make search bar fit the phone */
+    .search-container {
+        width: 45%;
+        right: 4%;
+    }
+
+    #playerSearch {
+        width: 100%;
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+}
